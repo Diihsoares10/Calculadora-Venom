@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Venom</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="calculadora.css">
+<link rel="shortcut icon" href="favicon-16x16.png" type="favicon">
+</head>
+<body>
+	<div class="calculator">
+		<input type="text" id="result" disabled>
+		<br>
+		<input type="button" value="7" onclick="calculator.input('7')">
+		<input type="button" value="8" onclick="calculator.input('8')">
+		<input type="button" value="9" onclick="calculator.input('9')">
+		<input type="button" value="+" onclick="calculator.operacao('+')">
+		<br>
+		<input type="button" value="4" onclick="calculator.input('4')">
+		<input type="button" value="5" onclick="calculator.input('5')">
+		<input type="button" value="6" onclick="calculator.input('6')">
+		<input type="button" value="-" onclick="calculator.operacao('-')">
+		<br>
+		<input type="button" value="1" onclick="calculator.input('1')">
+		<input type="button" value="2" onclick="calculator.input('2')">
+		<input type="button" value="3" onclick="calculator.input('3')">
+		<input type="button" value="x" onclick="calculator.operacao('*')">
+		<br>
+		<input type="button" value="0" onclick="calculator.input('0')">
+		<input type="button" value="." onclick="calculator.input('.')">
+		<input type="button" value="÷" onclick="calculator.operacao('/')">
+		<input type="button" value="⌫" onclick="calculator.clear()">
+		<br>
+		<input type="button" value="=" onclick="calculator.calculate()">
+		<input type="button" value="C" onclick="calculator.clear(1)">
+	</div>
+	<script src="calculadora.js"></script>
+
+	<footer>
+		<p>&copy; Diego Soares</p>
+	</footer>
+</body>
+</html>
