@@ -23,9 +23,13 @@
 	background-color: rgb(16, 16, 19);
 	color: azure;
 }
+
 body {
     background-image: url("v2.jpg");
-	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
 }
 
 .calculator  input[type="text"] {
